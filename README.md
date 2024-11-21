@@ -1,30 +1,38 @@
-# Decentralized Social Media(Dwitter)
+# Decentralized Social Media(
 `Consensys Bootcamp Project`
 
 ## Introduction
 
-In the present world social media has become a very important part of our lives. We share so much content everyday ranging from what we are doing in our personal lives to professional information. For some it's a source of income due to its marketing capabilties and for some it's platform to share there content, for some its a platform to raise there voice and for some it's a platform to connect to world. Infact some social media platforms have become a political playground also. Many decisions, ideas, events our shared on these platforms, consider the case of twitter many heads of countries share updates on this platform. But with all these things we know social media has a problem due to its centralized nature. we have seen of password leak of twitter users and forcefull banning of accounts due to political influence. Also the advertisers may not know wether the ads they are promoting are not influenced by these companies. All these things force us to adopt a decentralization and this project have tried to implemented that.
+In today’s world, social media has become an integral part of our lives. People use these platforms to share content ranging from personal updates to professional information. For some, it serves as a source of income due to its marketing potential; for others, it’s a space to share creative content, amplify their voices, or connect with the world. Social media has even evolved into a platform for political discourse, with leaders and officials using it to share important updates and ideas. For example, many heads of state use platforms like Twitter to communicate directly with citizens.  
 
+However, despite its benefits, social media faces significant challenges due to its centralized nature. Issues such as password leaks, politically motivated account bans, and advertiser uncertainty about biased ad placements have raised serious concerns. These vulnerabilities highlight the need for a decentralized alternative.  
 
-## Platform Overview
+This project aims to address these issues by creating a fully decentralized social media platform. It provides users with greater security, freedom, and transparency by removing reliance on central authorities, ensuring that the content and user experience remain fair and unbiased.  
+---
+The platform is a decentralized social media network, similar to Twitter, but built entirely on a decentralized ramework without relying on servers. It leverages a smart contract on the Ethereum blockchain to manage all critical logic. Some key features of the platform include:  
 
-The platform is a decentralized social media something similar to twitter but totally in a decentralized way having no server. The platform is having a smart contract containing all the important logic and is deployed on Ethereum Blockchain. Some of the features of the platform are:
-- Secure and user friendly login using metamask wallet
-- Only your Public address is the key to access the platform
-- Cool user profile same as Twitter
-- Easy to use interface
-- Commenting feature on dweets
-- Reporting feature on dweets
-  - Once a dweet get a specified no of reports it will be sent to maintainers for action
-  - You will have to stake some ethers for reporting
-  - If the dweet is banned by maintainers you will get refund and a reward
-  - If the dweet is not Banned by maintainers you will get no refund and the staked amount will go to the reported dweet author
-- Like feature on dweets
-- You can upload advertisements(image and a link) and reach out to platform users at nominal cost
-  - Advertisements once submitted will be sent to maintainers for acceptance
-  -If it is rejected then 80% amount will be refunded
-- Maintainers can be added to the platform
-- A dedicated maintainer page where you can give acceptance and ban dweets(**only If it gets required reports**)
+- **Secure and User-Friendly Login**: Authentication is handled via MetaMask wallet integration.  
+- **Blockchain-Based Access**: Your public address serves as the unique key to access the platform.  
+- **Engaging User Profiles**: Profiles are designed to be visually appealing, akin to those on traditional social media platforms.  
+- **Intuitive Interface**: The platform is designed with simplicity and ease of use in mind.  
+- **Commenting System**: Users can engage with posts by leaving comments.  
+- **Reporting Mechanism**:  
+  - Posts that receive a specified number of reports are reviewed by maintainers for further action.  
+  - Reporting requires users to stake a small amount of Ether.  
+  - If a reported post is banned by maintainers, the reporter is refunded and rewarded.  
+  - If the post is not banned, the staked amount is transferred to the author of the reported post.  
+- **Like Feature**: Users can interact with posts by liking them.  
+- **Advertisements**:  
+  - Users can upload ads (images and links) to reach the platform’s audience for a nominal fee.  
+  - Ads are subject to review by maintainers before being approved.  
+  - If an ad is rejected, 80% of the fee is refunded to the advertiser.  
+- **Maintainer Management**:  
+  - Maintainers can be added to the platform to oversee content moderation.  
+  - A dedicated maintainer dashboard allows them to take actions such as approving ads and banning posts (only if the required number of reports is met).  
+
+--- 
+
+Let me know if you'd like further modifications!
 
 ## Tech stack Used
 - Ethereum
@@ -37,54 +45,3 @@ The platform is a decentralized social media something similar to twitter but to
 - Jquery
 - Truffle
 
-## Future Work
-- Use Meta transactions(gasless transactions) to make the platform gas free for users
-- Add more Features like follow, profile view etc
-- Add video Advertisement options
-- Add reporting on comments
-
-
-## Directory Structure
-```
-📦 DECENTRALIZED_SOCIAL_MEDIA
- ┣ 📂 .github
- ┣ 📂 node_modules
- ┣ 📂 build (Recent build of the Smart Contracts)
- ┣ 📂 contract (Solidity Smart Contracts)
- ┣ 📂 migrations (Truffle deployment migrations)
- ┣ 📂 test (Smart Contract Tests)
- ┣ 📂 src (Dapp Frontend)
- ┣ 📜 avoiding_common_attacks.md
- ┣ 📜 design_pattern_decisions.md
- ┣ 📜 package.json (project dependencies)
- ┣ 📜 README.md (Project Documentation)
- ┣ 📜 server.js (Lite server to host frontend)
- ┗ 📜 truffle-config.js (Truffle Project Config)
-```
-
-## Running the project
-
-### Smart Contracts
-1. Run `npm i` to install dependencies.
-4. Run `ganache-cli` to start a local chain.
-3. In the projects root directory, run `truffle console` to interact with the porject.
-4. To compile contracts run `truffle compile`
-5. To deploy run `truffle migrate` 
-6. To test run `truffle test` 
-
-### Frontend/To Start Local Server
-1. In the projects root directory, run `npm start`
-
-## Project Demo
-Website 👉 [https://dwittermedia.herokuapp.com/](https://dwittermedia.herokuapp.com/)
-
-YouTube 👉 [https://youtu.be/l75vF8HAJ8Y](https://youtu.be/l75vF8HAJ8Y)
-
-## Avoiding Common Attacks
-Documented here 👉 [avoiding_common_attacks.md](avoiding_common_attacks.md)
-
-## Deployed Addresses
-Documented here 👉 [deployed_addresses.md](deployed_addresses.md)
-
-## Design Pattern Decisions
-Documented here 👉 [design_pattern_decisions.md](design_pattern_decisions.md)
